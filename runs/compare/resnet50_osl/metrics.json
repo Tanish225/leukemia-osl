@@ -1,0 +1,36 @@
+{
+  "mode": "holdout",
+  "args": {
+    "data_dir": "data",
+    "model": "resnet50",
+    "head": "osl",
+    "mode": "holdout",
+    "folds": 10,
+    "test_size": 0.3,
+    "val_frac": 0.15,
+    "epochs": 30,
+    "batch_size": 16,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "img_size": 224,
+    "hidden": 256,
+    "dropout": 0.5,
+    "num_workers": 0,
+    "seed": 42,
+    "no_pretrained": false,
+    "out": "runs/compare/resnet50_osl"
+  },
+  "metrics": {
+    "accuracy": 99.09909909909909,
+    "precision": 99.99999999999811,
+    "recall": 98.14814814814633,
+    "specificity": 99.99999999999825,
+    "f1": 0.990654205606958,
+    "auc": 0.9983755685510071,
+    "TN": 57,
+    "FP": 0,
+    "FN": 1,
+    "TP": 53
+  },
+  "train_time_sec": 1322.8
+}
